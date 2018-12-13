@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import {  add } from './method';
 class App extends Component {
   render() {
     return (
@@ -22,6 +22,11 @@ class App extends Component {
         </header>
       </div>
     );
+  }
+  componentDidMount(){
+     let arr = ['a','b','c','d','t','g','d','r','4','2','6','88','1','0','i','7','9'] 
+     let n = 10 //中间截取几位
+     console.log(add(arr,n))
   }
 }
 
